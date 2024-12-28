@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Search Example</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Binary Search</h1>
+
+        <!-- Input Form -->
+        <form id="binarySearchForm">
+            <div class="form-group">
+                <label for="arrayInput">Sorted Array</label>
+                <input type="text" class="form-control" id="arrayInput" required>
+            </div>
+            <div class="form-group">
+                <label for="searchInput">Search Element</label>
+                <input type="number" class="form-control" id="searchInput" required>
+            </div>
+            <button type="button" class="btn btn-primary" id="nonRecursiveSearchBtn">Non-Recursive Search</button>
+            <button type="button" class="btn btn-secondary" id="recursiveSearchBtn">Recursive Search</button>
+        </form>
+        <hr>
+        <!-- Time Complexity Explanation -->
+        <div class="result">
+            <h3>Time Complexity:</h3>
+            <p>Non-recursive binary search: O(log n)</p>
+            <p>Recursive binary search: O(log n) - additional memory for recursive calls</p>
+        </div>
+
+        <!-- Results -->
+        <div id="results" class="result">
+            <h3>Results:</h3>
+            <p id="nonRecursiveResult"></p>
+            <p id="recursiveResult"></p>
+            <p id="errorResult" class="error-message"></p>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="bs.js"></script>
+</body>
+</html>
